@@ -1,4 +1,4 @@
-# Practical 9: Adventure Game Head-Up Display
+# Practical 8.2: Adventure Game Head-Up Display
 
 In this practical, you are going to further extend the adventure game scene you've been working on by adding a HUD and GUI.
 
