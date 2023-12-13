@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class collectAmmo : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class collectAmmo : MonoBehaviour
     public AudioClip t4_reload;
     public AudioClip t6_gunshot;
     public AudioClip t7_bridge;
+    Image image;
 
 
     // Start is called before the first frame update
@@ -56,7 +58,17 @@ public class collectAmmo : MonoBehaviour
             ammoLevel += 20;
             gs.clip = t4_reload;
             gs.Play();
+            //Debug.Log("1");
         }
+        /*else
+        {
+            image = GetComponent<Image>();
+
+            Color c = image.color;
+            c.a = 0.3f;
+            image.color = c;
+            Debug.Log("0");
+        }*/
 
     }
 }
