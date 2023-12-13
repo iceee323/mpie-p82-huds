@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,13 +11,14 @@ public class collectAmmo : MonoBehaviour
     public AudioClip t4_reload;
     public AudioClip t6_gunshot;
     public AudioClip t7_bridge;
-    Image image;
-
 
     // Start is called before the first frame update
     void Start()
     {
         gs = GetComponent<AudioSource>();
+        //crosshair = GetComponent<Image>();
+        //Color c = image.color;
+
     }
 
     // Update is called once per frame
@@ -48,6 +49,18 @@ public class collectAmmo : MonoBehaviour
             gs.Play();
         }
         
+        if (ammoLevel <= 0)
+        {
+            c.a = 0.3f;
+            crosshair.color = c;
+            Debug.Log("0");
+        }
+        else if (ammoLevel >= 1)
+        {
+            c.a = 1;
+            crosshair.color = c;
+            Debug.Log("0");
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -58,17 +71,7 @@ public class collectAmmo : MonoBehaviour
             ammoLevel += 20;
             gs.clip = t4_reload;
             gs.Play();
-            //Debug.Log("1");
         }
-        /*else
-        {
-            image = GetComponent<Image>();
-
-            Color c = image.color;
-            c.a = 0.3f;
-            image.color = c;
-            Debug.Log("0");
-        }*/
-
     }
 }
+*/
