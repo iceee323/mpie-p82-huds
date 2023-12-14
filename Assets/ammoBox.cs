@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -49,7 +49,7 @@ public class collectAmmo : MonoBehaviour
             gs.Play();
         }
         
-        if (ammoLevel <= 0)
+        /*if (ammoLevel <= 0)
         {
             c.a = 0.3f;
             crosshair.color = c;
@@ -60,7 +60,7 @@ public class collectAmmo : MonoBehaviour
             c.a = 1;
             crosshair.color = c;
             Debug.Log("0");
-        }
+        }*/
     }
 
     void OnTriggerEnter(Collider other)
@@ -74,4 +74,3 @@ public class collectAmmo : MonoBehaviour
         }
     }
 }
-*/
